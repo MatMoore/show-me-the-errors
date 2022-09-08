@@ -1,0 +1,14 @@
+{
+  "name": "Show me the errors",
+  "description": "Move failing checks to the top in github actions",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*/pull/*"],
+      "js": ["show-me-the-errors.js"]
+    }
+  ]
+}
